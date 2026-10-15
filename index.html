@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>my little corner</title>
+  <meta name="description" content="art, cooking, crafts, iconography study, and home making">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // shows a striped box when an image file is missing
+    function placeholder(text) {
+      var d = document.createElement("div");
+      d.className = "ph";
+      d.textContent = text;
+      return d;
+    }
+  </script>
+</head>
+<body>
+
+  <!-- scrolling banner: change the text to whatever you like -->
+  <div class="banner" aria-hidden="true">
+    <div class="banner-track">
+      <span>✦ welcome to my little corner of the internet ✦ pull up a chair ✦ the kettle is on ✦</span>
+      <span>✦ welcome to my little corner of the internet ✦ pull up a chair ✦ the kettle is on ✦</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="logo" href="#home">my little corner</a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">menu</button>
+    <nav class="nav" id="nav">
+      <a href="#home">home</a>
+      <a href="#about">about</a>
+      <a href="#art">art</a>
+      <a href="#cooking">cooking</a>
+      <a href="#crafts">crafts</a>
+      <a href="#iconography">iconography</a>
+      <a href="#home-making">home making</a>
+      <a href="#blog">blog</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HOME ============ -->
+    <section id="home" class="page">
+      <h1>welcome ❦</h1>
+      <p class="lead">hi! this is where I keep my drawings, recipes, handmade things, icon studies and notes on making a home. I hope you find something you like.</p>
+
+      <div class="tiles">
+        <a class="tile" href="#art"><span class="tile-icon">🖌️</span><strong>art</strong><small>pencil, ink &amp; watercolor</small></a>
+        <a class="tile" href="#cooking"><span class="tile-icon">🍲</span><strong>cooking</strong><small>recipes I keep making</small></a>
+        <a class="tile" href="#crafts"><span class="tile-icon">🧵</span><strong>crafts</strong><small>things made by hand</small></a>
+        <a class="tile" href="#iconography"><span class="tile-icon">☦️</span><strong>iconography study</strong><small>notes, sketches &amp; symbols</small></a>
+        <a class="tile" href="#home-making"><span class="tile-icon">🕯️</span><strong>home making</strong><small>cozy, simple, lived-in</small></a>
+        <a class="tile" href="#blog"><span class="tile-icon">📖</span><strong>blog</strong><small>latest writing</small></a>
+      </div>
+
+      <h2>latest from the blog</h2>
+      <div id="latest-posts"></div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="page">
+      <h1>about</h1>
+      <div class="two-col">
+        <img class="portrait" src="images/me.jpg" alt="Photo of me" onerror="this.replaceWith(placeholder('your photo here'))">
+        <div>
+          <p>Write a few sentences about yourself here: who you are, where you live, and what you love making.</p>
+          <p>You could mention how long you've been drawing, what you cook on slow Sundays, or why you started studying iconography.</p>
+          <p>Add a way to reach you, like an email address or your social links.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ART ============ -->
+    <section id="art" class="page">
+      <h1>art</h1>
+      <p class="lead">click any piece to see it larger.</p>
+      <div class="gallery" data-gallery>
+        <!-- Replace src with your own images in /images. Copy one <figure> per artwork. -->
+        <figure><img src="images/art-1.jpg" alt="Artwork 1" onerror="this.replaceWith(placeholder('art 1'))"><figcaption>Title · colored pencil · 2026</figcaption></figure>
+        <figure><img src="images/art-2.jpg" alt="Artwork 2" onerror="this.replaceWith(placeholder('art 2'))"><figcaption>Title · watercolor · 2026</figcaption></figure>
+        <figure><img src="images/art-3.jpg" alt="Artwork 3" onerror="this.replaceWith(placeholder('art 3'))"><figcaption>Title · graphite · 2025</figcaption></figure>
+        <figure><img src="images/art-4.jpg" alt="Artwork 4" onerror="this.replaceWith(placeholder('art 4'))"><figcaption>Title · pen &amp; ink · 2025</figcaption></figure>
+        <figure><img src="images/art-5.jpg" alt="Artwork 5" onerror="this.replaceWith(placeholder('art 5'))"><figcaption>Title · watercolor · 2025</figcaption></figure>
+        <figure><img src="images/art-6.jpg" alt="Artwork 6" onerror="this.replaceWith(placeholder('art 6'))"><figcaption>Title · colored pencil · 2024</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ============ COOKING ============ -->
+    <section id="cooking" class="page">
+      <h1>cooking</h1>
+      <p class="lead">recipes I come back to. click a recipe to open it.</p>
+
+      <details class="recipe" open>
+        <summary>Lemon Lentil Soup <span class="meta">serves 4 · 40 min</span></summary>
+        <div class="recipe-body">
+          <h3>ingredients</h3>
+          <ul>
+            <li>1 cup red lentils, rinsed</li>
+            <li>1 onion, diced</li>
+            <li>2 carrots, diced</li>
+            <li>3 cloves garlic</li>
+            <li>5 cups vegetable stock</li>
+            <li>juice of 1 lemon</li>
+            <li>olive oil, salt, pepper, cumin</li>
+          </ul>
+          <h3>method</h3>
+          <ol>
+            <li>Soften the onion and carrots in olive oil for 8 minutes.</li>
+            <li>Add garlic and cumin, stir for a minute.</li>
+            <li>Add lentils and stock. Simmer 20 minutes until soft.</li>
+            <li>Blend part of the soup, add lemon, season, and serve warm.</li>
+          </ol>
+          <p class="note">note: this is a sample recipe. Replace it with your own.</p>
+        </div>
+      </details>
+
+      <details class="recipe">
+        <summary>Your Next Recipe <span class="meta">serves ? · ? min</span></summary>
+        <div class="recipe-body">
+          <p>Copy a whole <code>&lt;details class="recipe"&gt;</code> block to add another recipe.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- ============ CRAFTS ============ -->
+    <section id="crafts" class="page">
+      <h1>crafts</h1>
+      <p class="lead">knitting, sewing, paper, candles, whatever my hands get into.</p>
+      <div class="cards">
+        <article class="card">
+          <img src="images/craft-1.jpg" alt="" onerror="this.replaceWith(placeholder('craft photo'))">
+          <h3>Embroidered Linen Napkins</h3>
+          <p>A set of four with tiny wildflower motifs. Notes on thread colors and stitches go here.</p>
+        </article>
+        <article class="card">
+          <img src="images/craft-2.jpg" alt="" onerror="this.replaceWith(placeholder('craft photo'))">
+          <h3>Hand-Dipped Beeswax Candles</h3>
+          <p>What I learned about wicks, temperature and patience.</p>
+        </article>
+        <article class="card">
+          <img src="images/craft-3.jpg" alt="" onerror="this.replaceWith(placeholder('craft photo'))">
+          <h3>Bound Sketchbook</h3>
+          <p>Coptic stitch binding with a cloth cover.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ ICONOGRAPHY ============ -->
+    <section id="iconography" class="page">
+      <h1>iconography study</h1>
+      <p class="lead">a notebook of what I'm learning: symbols, colors, gestures, and how icons are made.</p>
+
+      <h2>currently studying</h2>
+      <ul class="study-list">
+        <li><strong>Colors and their meaning:</strong> gold for divine light, red for life and sacrifice, blue for heaven.</li>
+        <li><strong>Inverse perspective:</strong> why lines in an icon often widen away from the viewer.</li>
+        <li><strong>Gestures:</strong> what the hand positions of saints communicate.</li>
+        <li><strong>Egg tempera and gilding:</strong> materials and process.</li>
+      </ul>
+
+      <h2>sketches &amp; studies</h2>
+      <div class="gallery" data-gallery>
+        <figure><img src="images/icon-1.jpg" alt="Icon study 1" onerror="this.replaceWith(placeholder('study 1'))"><figcaption>Study of a halo and gold ground</figcaption></figure>
+        <figure><img src="images/icon-2.jpg" alt="Icon study 2" onerror="this.replaceWith(placeholder('study 2'))"><figcaption>Face proportions practice</figcaption></figure>
+        <figure><img src="images/icon-3.jpg" alt="Icon study 3" onerror="this.replaceWith(placeholder('study 3'))"><figcaption>Drapery fold studies</figcaption></figure>
+      </div>
+
+      <h2>sources &amp; reading list</h2>
+      <ul>
+        <li>Add books, museum collections and teachers that have helped you.</li>
+        <li>Add links to your favorite icon archives.</li>
+      </ul>
+    </section>
+
+    <!-- ============ HOME MAKING ============ -->
+    <section id="home-making" class="page">
+      <h1>home making</h1>
+      <p class="lead">small rituals that make a home feel like one.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>🕯️ Evening reset</h3>
+          <p>Fifteen minutes: dishes, clear the table, lamp on, candle lit.</p>
+        </article>
+        <article class="card">
+          <h3>🧺 Weekly rhythm</h3>
+          <p>Monday laundry, Wednesday floors, Friday bread, Sunday slow.</p>
+        </article>
+        <article class="card">
+          <h3>🌿 Seasonal touches</h3>
+          <p>Dried flowers, wool blankets, and what's on the windowsill this month.</p>
+        </article>
+        <article class="card">
+          <h3>🛋️ Room notes</h3>
+          <p>Photos and notes on a room you're working on.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ BLOG ============ -->
+    <section id="blog" class="page">
+      <h1>blog</h1>
+      <p class="lead">newest first.</p>
+
+      <div id="post-list">
+        <!--
+          TO ADD A POST: copy one <article class="post"> block and put it at the TOP.
+          Change data-date, data-tag, the title and the text.
+        -->
+        <article class="post" data-date="2026-10-14" data-tag="art">
+          <h2>Starting a new watercolor series</h2>
+          <p class="post-meta"><time datetime="2026-10-14">October 14, 2026</time> · <span class="tag">art</span></p>
+          <p>This is a sample post. Write about what you made this week, what went wrong, and what you learned.</p>
+          <p>You can add more paragraphs, <a href="#art">links</a>, and <code>images</code> as you like.</p>
+        </article>
+
+        <article class="post" data-date="2026-10-10" data-tag="home making">
+          <h2>My autumn evening routine</h2>
+          <p class="post-meta"><time datetime="2026-10-10">October 10, 2026</time> · <span class="tag">home making</span></p>
+          <p>Another sample post. Delete both once you have your own.</p>
+        </article>
+
+        <article class="post" data-date="2026-10-02" data-tag="cooking">
+          <h2>The soup I keep making</h2>
+          <p class="post-meta"><time datetime="2026-10-02">October 2, 2026</time> · <span class="tag">cooking</span></p>
+          <p>Third sample post, about the lentil soup in the cooking section.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>made by hand · copyright <span id="year"></span></p>
+    <p class="links">
+      <a href="mailto:you@example.com">email</a> ·
+      <a href="https://instagram.com/" rel="noopener">instagram</a> ·
+      <a href="https://pinterest.com/" rel="noopener">pinterest</a>
+    </p>
+  </footer>
+
+  <!-- lightbox for gallery images -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img alt="">
+    <p class="lightbox-caption"></p>
+  </div>
+
+  <!-- ============ MUSIC PLAYER (stays on screen while you browse) ============ -->
+  <aside class="player collapsed" id="player" aria-label="Music player">
+    <button class="player-toggle" id="player-toggle" aria-label="Show or hide music player">♪</button>
+    <div class="player-body">
+      <div class="player-info">
+        <div class="player-title" id="track-title">nothing playing</div>
+        <div class="player-artist" id="track-artist"></div>
+      </div>
+      <input type="range" id="seek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+      <div class="player-time"><span id="time-now">0:00</span><span id="time-total">0:00</span></div>
+      <div class="player-controls">
+        <button id="btn-prev" aria-label="Previous">⏮</button>
+        <button id="btn-play" class="big" aria-label="Play or pause">▶</button>
+        <button id="btn-next" aria-label="Next">⏭</button>
+        <button id="btn-shuffle" aria-label="Shuffle" title="Shuffle">🔀</button>
+      </div>
+      <label class="player-volume">vol
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.8" aria-label="Volume">
+      </label>
+      <ol class="playlist" id="playlist"></ol>
+    </div>
+    <audio id="audio" preload="none"></audio>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
